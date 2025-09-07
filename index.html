@@ -87,6 +87,8 @@ const mensajes = [
        "Luis Angel Ponce Prieto"
     ];
     const titulosMensaje =[
+        "Especialidad:",
+        "Grado y Grupo:",
         "Módulo:",
         "Submódulo:", 
         "Fecha:"
@@ -114,21 +116,30 @@ const mensajes = [
             texto.classList.remove("chiquito")
           
         } 
-        if(i === 3)
+          if(i === 1){
+              contenedor.innerHTML =""; 
+              contenedor.innerHTML = titulosMensaje[0] 
+              
+          }
+              else if(i=== 2){
+                  contenedor.innerHTML =""; 
+                  contenedor.innerHTML =titulosMensaje[1]; 
+              }
+        else if(i === 3)
         {
             contenedor.innerHTML=""; 
 
-            contenedor.innerHTML=titulosMensaje[0]; 
+            contenedor.innerHTML=titulosMensaje[2]; 
         }else if(i ===4){
             contenedor.innerHTML=""
-            contenedor.innerHTML=titulosMensaje[1]
+            contenedor.innerHTML=titulosMensaje[3]
 
         }else if(i=== 5){
             contenedor.innerHTML=""; 
-            contenedor.innerHTML=titulosMensaje[2]
+            contenedor.innerHTML=titulosMensaje[4]
         }else if(i >5){
             contenedor.innerHTML=""
-            contenedor.innerHTML=titulosMensaje[3]
+            contenedor.innerHTML=titulosMensaje[5]
             contenedor.style="opacity:1;"
             if(i ===9){
                 contenedor.style="transition:opacity 0.8s ;"
@@ -150,6 +161,7 @@ const mensajes = [
 
 </body>
 </html>
+
 
 
 
